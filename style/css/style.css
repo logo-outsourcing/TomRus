@@ -775,8 +775,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .footer__wrap,
-  .footer__wrapper {
+  .footer__wrap {
     flex-flow: column-reverse;
   }
   .footer__box {
