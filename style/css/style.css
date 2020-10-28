@@ -412,6 +412,17 @@
 .footer__wrapper {
   align-items: flex-end;
 }
+.footer__social {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+.footer__social:not(:last-child) {
+  margin-right: 20px;
+}
+.footer__social--icon {
+  width: 100%;
+}
 .modal_div {
   max-width: 92%;
   width: 424px;
@@ -761,6 +772,13 @@
     flex-direction: column;
     align-items: center;
   }
+  .footer__wrap,
+  .footer__wrapper {
+    flex-flow: column-reverse;
+  }
+  .footer__box {
+    margin-bottom: 30px;
+  }
   .footer__logo {
     margin: 0 0 30px;
   }
@@ -795,5 +813,9 @@
   .modal_head {
     font-size: 20px;
     margin-bottom: 30px;
+  }
+  .modal_div .modal_close {
+    width: 25px;
+    height: 25px;
   }
 }

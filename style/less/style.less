@@ -495,6 +495,20 @@
   &__wrapper {
     align-items: flex-end;
   }
+
+  &__social {
+    display: block;
+    width: 25px;
+    height: 25px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &--icon {
+      width: 100%;
+    }
+  }
 }
 
 .modal_div {
@@ -958,6 +972,14 @@
     align-items: center;
   }
 
+  .footer__wrap,
+  .footer__wrapper {
+    flex-flow: column-reverse;
+  }
+  .footer__box{
+    margin-bottom: 30px;
+  }
+
   .footer__logo {
     margin: 0 0 30px;
   }
@@ -1002,5 +1024,10 @@
   .modal_head {
     font-size: 20px;
     margin-bottom: 30px;
+  }
+
+  .modal_div .modal_close {
+    width: 25px;
+    height: 25px;
   }
 }
