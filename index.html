@@ -15,19 +15,35 @@
     <div class="content-container">
         <div class="header__heading content-row">
             <a href="#" class="header__logo"><img class="header__logo--icon" src="img/logo-header.png" alt="logo"> </a>
-            <a href="#" class="header__link">Перезвоните мне</a>
+            <a href="#call" class="header__link open_modal">Перезвоните мне</a>
         </div>
+        <div id="call" class="modal_div">
+            <div class="modal_wrapp">
+                <h5 class="modal_head"> Заказать обратный звонок</h5>
+                <form class="modal_form" action="/" method="post">
+                    <input placeholder="Имя" type="text" name="" required class="content-input modal_input">
+                    <input class="content-input modal_input" type="tel" pattern='\d{1}[\(]\d{3}[\)]\d{7}'
+                           title='Phone Number (Format: 9(999)9999999)' name=""
+                           placeholder="Телефон" required>
+                    <button class="content-button modal_button" type="submit">Оставить заявку</button>
+                </form>
+            </div>
+            <span class="modal_close"></span>
+        </div>
+        <div class="overlay"></div>
 
         <div class="header__content">
             <h1 class="header__title">Покраска дома по технологии и материалами из финляндии со <span
                     class="header__title--color">скидкой 30%</span> до конца месяца
                 Нам доверяют уже 8 лет
             </h1>
-            <div class="content-row header__form">
-                <input class="content-input" placeholder="Имя">
-                <input class="content-input" placeholder="Телефон">
-                <button class="content-button">Оставить заявку</button>
-            </div>
+            <form class="content-row header__form" action="/" method="post">
+                <input class="content-input" placeholder="Имя" type="text" name="" required>
+                <input class="content-input" type="tel" placeholder="Телефон" pattern='\d{1}[\(]\d{3}[\)]\d{7}'
+                       title='Phone Number (Format: 9(999)9999999)' name=""
+                       required>
+                <button class="content-button" type="submit">Оставить заявку</button>
+            </form>
         </div>
     </div>
 </header>
@@ -38,10 +54,25 @@
                 <div class="selection__name">
                     <h2 class="content-title selection__title"> Подбор цветового решения
                         <span class="content-title-color selection__title--inner"> бесплатно</span></h2>
-                    <a href="#" class="content-button selection__button">Заказать</a>
+                    <a href="#order" class="content-button selection__button open_modal">Заказать</a>
                 </div>
                 <img src="img/selection4.png" alt="photo4" class="selection__wrap--image">
             </div>
+            <div id="order" class="modal_div modal_inner">
+                <div class="modal_wrapp">
+                    <h5 class="modal_head"> Заказать подбор цветового решения <span
+                            class="modal_head-inner"> бесплатно</span></h5>
+                    <form class="modal_form" action="/" method="post">
+                        <input placeholder="Имя" type="text" name="" required class="content-input modal_input">
+                        <input class="content-input modal_input" type="tel" pattern='\d{1}[\(]\d{3}[\)]\d{7}'
+                               title='Phone Number (Format: 9(999)9999999)' name=""
+                               placeholder="Телефон" required>
+                        <button class="content-button modal_button" type="submit">Заказать расчет</button>
+                    </form>
+                </div>
+                <span class="modal_close"></span>
+            </div>
+            <div class="overlay"></div>
             <div class="selection__block">
                 <div class="content-row selection__picture">
                     <img src="img/selection2.png" alt="photo2" class="selection__image">
@@ -54,12 +85,13 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"><img src="img/selection2.png" alt="photo2" class="selection__slider--image"></div>
+                <div class="swiper-slide"><img src="img/selection2.png" alt="photo2" class="selection__slider--image">
+                </div>
                 <div class="swiper-slide"><img src="img/selection3.png" alt="photo3" class="selection__slider--image">
                 </div>
                 <div class="swiper-slide"><img src="img/selection6.png" alt="photo4" class="selection__slider--image">
                 </div>
-                <div class="swiper-slide"> <img src="img/selection7.png" alt="photo5" class="selection__slider--image">
+                <div class="swiper-slide"><img src="img/selection7.png" alt="photo5" class="selection__slider--image">
                 </div>
 
             </div>
@@ -77,12 +109,26 @@
                 материалов промышленного назначения. Самые современные технологии и постоянные исследования позволяют
                 достичь высочайших показателей как экологичности покрытия, так и экологичности материала, что
                 сказывается при его нанесении.</p>
-            <a class="content-button paint__button">Заказать расчет</a>
+            <a class="content-button paint__button open_modal" href="#payment">Заказать расчет</a>
         </div>
+        <div id="payment" class="modal_div">
+            <div class="modal_wrapp">
+                <h5 class="modal_head"> Заказать расчет</h5>
+                <form class="modal_form" action="/" method="post">
+                    <input placeholder="Имя" type="text" name="" required class="content-input modal_input">
+                    <input class="content-input modal_input" type="tel" pattern='\d{1}[\(]\d{3}[\)]\d{7}'
+                           title='Phone Number (Format: 9(999)9999999)' name=""
+                           placeholder="Телефон" required>
+                    <button class="content-button modal_button" type="submit">Заказать расчет</button>
+                </form>
+            </div>
+            <span class="modal_close"></span>
+        </div>
+        <div class="overlay"></div>
     </div>
 </div>
 <div class="work">
-    <div class="content-container">
+    <div class="content-container work__container">
         <h2 class="content-title work__title">Наши <span class="content-title-color"> работы</span></h2>
         <div class="work__slider swiper-container">
             <div class="swiper-wrapper">
@@ -206,15 +252,17 @@
             <h3 class="questions__title">У вас остались <span class="questions__title--color">вопросы?</span></h3>
             <p class="questions__text">Оставьте заявку и мы ответим на них в течении 5 минут.</p>
         </div>
-        <div class="content-row questions__form">
-            <input class="content-input" placeholder="Имя">
-            <input class="content-input" placeholder="Телефон">
-            <button class="content-button">Оставить заявку</button>
-        </div>
+        <form class="content-row questions__form" action="/" method="post">
+            <input class="content-input" placeholder="Имя" name="" required>
+            <input class="content-input" placeholder="Телефон" pattern='\d{1}[\(]\d{3}[\)]\d{7}'
+                   title='Phone Number (Format: 9(999)9999999)' name=""
+                   required>
+            <button class="content-button" type="submit">Оставить заявку</button>
+        </form>
     </div>
 </div>
 <div class="reviews">
-    <div class="content-container">
+    <div class="content-container reviews__container">
         <h2 class="content-title reviews__title">Наши <span class="content-title-color"> отзывы</span></h2>
         <div class="swiper-container reviews__slider">
             <!-- Additional required wrapper -->
@@ -250,11 +298,15 @@
         <div class="content-row footer__content">
             <div class="footer__form">
                 <h4 class="footer__subtitle">Оставьте заявку и наш менеджер свяжеться с вами.</h4>
-                <input class="content-input footer__input" placeholder="Имя">
-                <input class="content-input  footer__input" placeholder="Телефон">
-                <button class="content-button  footer__input">Оставить заявку</button>
+                <form action="/" method="post">
+                    <input class="content-input footer__input" placeholder="Имя" name="" required>
+                    <input class="content-input  footer__input" placeholder="Телефон" pattern='\d{1}[\(]\d{3}[\)]\d{7}'
+                           title='Phone Number (Format: 9(999)9999999)' name=""
+                           required>
+                    <button class="content-button  footer__input" type="submit">Оставить заявку</button>
+                </form>
             </div>
-            <div>
+            <div class="footer__requisites">
                 <h4 class="footer__subtitle">Реквизиты</h4>
                 <ul class="footer__list">
                     <li>ООО "ТОМ СОЙЕР"</li>
