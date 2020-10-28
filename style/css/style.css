@@ -667,6 +667,9 @@
   }
   .header {
     padding: 30px 0 0;
+    background: url("../../img/bg-header-mobile.png") no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .header__title {
     font-size: 20px;
