@@ -684,7 +684,7 @@
     font-size: 20px;
   }
   .header__content {
-    padding: 58px 0;
+    padding: 102px 0;
   }
   .header__form {
     flex-direction: column;
@@ -821,16 +821,13 @@
     height: 25px;
   }
 }
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 320px) {
   .header__content {
-    padding: 145px 0;
+    padding: 60px 0;
   }
 }
-@media screen and (max-width: 374px) {
+@media screen and (min-height: 731px) {
   .header__content {
-    padding: 90px 0;
-  }
-  .header__title {
-    margin-bottom: 30px;
+    padding: 142px 0;
   }
 }
